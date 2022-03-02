@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/record.css') }}">
+   </head>
+   <body >
+      <br>
+      <hr>
+      <h1>Time Series graphs with InfluxDB </h1>
+      <hr>
+     <h2>Add new record to database</h2>
+   <form id="student_form"  action = "http://localhost:5000/addRecord" method = "POST">
+       <p>
+         <label>Location </label>
+     <input type = "text" name = "Location" />
+     </p>
+     <p><label>Temperature </label>
+         <input type = "text" name = "Temperature" />
+      </p>     
+    <br/>
+     <input type = "submit" id="submit" value = "Submit Record" />
+      </form>
+     <br>
+      <form id ="form_s" action = "http://localhost:5000/plot" method = "GET">
+         <input type = "submit" 
+                id="getAll"
+                value = "Generate Matplotlib Graph"  />      </form>
+      <br>
+      <form id ="form_s" action = "http://localhost:5000/database" method = "GET">
+         <input type = "submit" 
+                id="getAll"
+                value = "View Database"  />      </form>
+   </body>
+</html>
