@@ -19,7 +19,7 @@ app = Flask(__name__)
 def chartTest():
 
       query = ' from(bucket:"Demo")\
-      |> range(start: -10m)\
+      |> range(start: -1d)\
       |> filter(fn:(r) => r._measurement == "my_measurement")\
       |> filter(fn: (r) => r.location == "India")\
       |> filter(fn:(r) => r._field == "temperature" ) '
