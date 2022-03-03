@@ -8,8 +8,8 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 
 
 # You can generate an API token from the "API Tokens Tab" in the UI
-token = "29ZCFBz82gAECt3S1NdXPouZX0j7To5V8FjaISYDpHODZ1blbnpPGI3PhIAOpX5MgdlL62SY8vvBNZX0gFKvhg=="
-org = "soumi_bt18@iiitkalyani.ac.in"
+token = "Replace token here"
+org = "soumi_bt18@iiitkalyani.ac.in" #Replace your org here
 bucket = "Demo"
 
 client = influxdb_client.InfluxDBClient(url="https://us-east-1-1.aws.cloud2.influxdata.com", token=token, org=org)
